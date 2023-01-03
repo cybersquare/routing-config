@@ -2,6 +2,8 @@ import React from "react";
 
 function Signup(){
     return(
+        <div className="auth-wrapper">
+          <div className="auth-inner">
         <form>
         <h3>Sign Up</h3>
 
@@ -46,6 +48,7 @@ function Signup(){
           Already registered <a href="/sign-in">sign in?</a>
         </p>
       </form>
+      </div></div>
     );
 }
 

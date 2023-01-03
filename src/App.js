@@ -2,7 +2,7 @@ import './App.css';
 import cs_logo from './cs_logo.png'
 import WebRoutes from './routes/WebRoutes';
 import WebLinks from './routes/WebLinks';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 
 
@@ -14,11 +14,9 @@ function App() {
         {/* Navbar */}
         <WebLinks/>
       </div>
-      <div className="auth-wrapper">
-          <div className="auth-inner">
+      
       <WebRoutes/>
-      </div>
-      </div>
+      
       <Footer/>
     </BrowserRouter>
   );

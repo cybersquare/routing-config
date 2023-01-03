@@ -12,7 +12,7 @@ const RouteData = {
     signup: {
         path: "/signup",
         component: Signup,
-        menuText:"Something",
+        menuText:"Sign Up",
         isPrivate: false
     },
     test: {

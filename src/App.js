@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import cs_logo from './cs_logo.png'
+import WebRoutes from './routes/WebRoutes';
+import WebLinks from './routes/WebLinks';
+import { BrowserRouter, Link } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='header'>
+        <img src={cs_logo} alt="CyberSquare logo" width="300" />
+        {/* Navbar */}
+        <WebLinks/>
+      </div>
+      <div className="auth-wrapper">
+          <div className="auth-inner">
+      <WebRoutes/>
+      </div>
+      </div>
+      <Footer/>
+    </BrowserRouter>
   );
 }
-
 export default App;
